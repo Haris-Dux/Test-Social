@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 95% !important;
+    margin-inline: auto;
+}
+
+body {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(124deg, rgba(255, 255, 255, 1) 9%, rgba(216, 247, 255, 1) 43%);
+    scroll-behavior: smooth !important;
+    --sb-track-color: #98a5ab;
+    --sb-thumb-color: #6366f1;
+    --sb-size: 6px;
+
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 12px;
+
+}
+
+.course_card {
+    transition: .3s ease-in-out;
+}
+
+.course_card:hover {
+    transform: translateY(-5px);
+}
+
+
+
+.footer {
+    /* From https://css.glass */
+    background: rgba(105, 249, 255, 0.04);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(105, 249, 255, 0.3);
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 97% !important;
+    }
+}
